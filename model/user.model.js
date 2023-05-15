@@ -13,6 +13,6 @@ const userSchema = new mongoose.Schema({
     required: true,
     minlength: 6,
   },
-});
+}, { versionKey : false });
 // export user model
 module.exports = mongoose.model('User', userSchema);
